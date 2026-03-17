@@ -525,13 +525,29 @@
     ],
     "className": "org.joget.apps.form.model.Form",
     "properties": {
+        "noPermissionMessage": "",
         "loadBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
         "name": "Complaint Form",
         "description": "Customer Complaint Portal - Submission Form",
+        "postProcessorRunOn": "create",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
         "id": "cts_compliant_form",
+        "postProcessor": {
+            "className": "org.joget.plugin.enterprise.FormDataUpdateTool",
+            "properties": {
+                "formDefId": "cts_compliant_form",
+                "fields": [{
+                    "field": "status",
+                    "value": "Pending"
+                }]
+            }
+        },
         "storeBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
