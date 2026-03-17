@@ -24,7 +24,7 @@
                         "id": "2E49335D0135403FA8555DBDBC4534A8",
                         "iconIncluded": false,
                         "processDefId": "process1",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "review",
                         "fieldPassover": ""
                     }
                 },
@@ -39,7 +39,7 @@
                         "assignment-customFooter": "",
                         "label": "Review Request",
                         "enableOffline": "",
-                        "customId": "",
+                        "customId": "review",
                         "showDetail": "",
                         "datalistId": "list_cts_complaint_review",
                         "userviewCacheDuration": "",
