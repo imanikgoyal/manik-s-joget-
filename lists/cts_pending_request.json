@@ -76,7 +76,22 @@
     "id": "cts_pending_request",
     "binder": {
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-        "properties": {"formDefId": "cts_complaint_review"}
+        "properties": {
+            "joins": [],
+            "aggregateField": [],
+            "formDefId": "cts_complaint_review",
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [{
+                "field": "status",
+                "join": "AND",
+                "value": "Pending",
+                "operator": "="
+            }],
+            "groupBy": "",
+            "cacheRowCount": "",
+            "functionColumns": []
+        }
     },
     "actions": [{
         "className": "org.joget.apps.datalist.lib.FormRowDeleteDataListAction",
