@@ -334,7 +334,12 @@
                 },
                 {
                     "className": "org.joget.plugin.enterprise.HtmlCodeComponent",
-                    "properties": {"id": "842A3D3E958F4307259EF073D907A4DB"}
+                    "properties": {
+                        "attr-data-events-listening": [],
+                        "textContent": "<div style=\"text-align:center; padding:20px;\">\n    <button\n        onclick=\"window.print();\"\n        style=\"\n            padding: 12px 24px;\n            font-size: 14px;\n            font-weight: 600;\n            border: none;\n            border-radius: 8px;\n            cursor: pointer;\n            background: linear-gradient(135deg, #11998e, #38ef7d);\n            color: #fff;\n            box-shadow: 0 6px 16px rgba(0,0,0,0.25);\n        \">\n        🖨️ Print\n    <\/button>\n<\/div>",
+                        "id": "A742F3B3DE76437DB9B80811C81EF1A3",
+                        "customId": ""
+                    }
                 }
             ],
             "className": "org.joget.apps.userview.lib.component.ContainerComponent",
