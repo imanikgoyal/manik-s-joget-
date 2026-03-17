@@ -1,14 +1,83 @@
-{"properties": {
-    "margins": "normal",
-    "orientation": "portrait",
-    "leftMargin": "10",
-    "topMargin": "10",
-    "rightMargin": "10",
-    "bottomMargin": "10",
-    "name": "Complaint Report",
-    "description": "",
-    "id": "rp_complaint_report",
-    "pageHeight": "297",
-    "paperSize": "a4",
-    "pageWidth": "210"
-}}
+{
+    "footer": {"elements": []},
+    "header": {"elements": []},
+    "body": {"elements": [
+        {
+            "className": "org.joget.rbuilder.lib.ListReportElement",
+            "properties": {
+                "headerTextColor": "",
+                "headerColor": "",
+                "automatedNum": "",
+                "footer": [],
+                "repeatFooterRowEveryPage": "",
+                "formulaColumns": [],
+                "footerRowlabel": "",
+                "id": "D613AE6C-B415-459F-55AD-5ADDB3725D6B",
+                "selectorClass": "",
+                "filterParams": [],
+                "datalistId": "cts_list_complaint"
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.ChartReportElement",
+            "properties": {
+                "sortingOrder": "ASC",
+                "stack": "",
+                "xAxisDisplayAS": "",
+                "valueAxisLabel": "Value",
+                "sortingOrderByColumn": "status",
+                "showLegend": "true",
+                "title": "",
+                "chartHeight": "480",
+                "mapping_x": "status",
+                "yaxisPrefix": "",
+                "colors": "",
+                "categoryAxisLabel": "Category",
+                "chartWidth": "640",
+                "mapping_dateformat": "",
+                "mapping_ys": [{
+                    "legend": "status",
+                    "y": "AFD_COUNT_status"
+                }],
+                "chartType": "bar",
+                "marginBottom": "10px",
+                "showValueLabel": "",
+                "id": "A1BB216B-320C-4DF7-D737-51D443913C15",
+                "halign": "center",
+                "selectorClass": "",
+                "binder": {
+                    "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                    "properties": {
+                        "joins": [],
+                        "having": [],
+                        "aggregateField": [{
+                            "field": "status",
+                            "function": "AFD_COUNT_"
+                        }],
+                        "formDefId": "cts_compliant_form",
+                        "customSelectionValue": "",
+                        "extraCondition": "",
+                        "filters": [],
+                        "groupBy": "status",
+                        "cacheRowCount": "",
+                        "functionColumns": []
+                    }
+                }
+            }
+        }
+    ]},
+    "properties": {
+        "margins": "normal",
+        "orientation": "portrait",
+        "leftMargin": "10",
+        "topMargin": "10",
+        "rightMargin": "10",
+        "bottomMargin": "10",
+        "name": "Complaint Report",
+        "description": "",
+        "id": "rp_complaint_report",
+        "pageHeight": "297",
+        "paperSize": "a4",
+        "pageWidth": "210"
+    }
+}
