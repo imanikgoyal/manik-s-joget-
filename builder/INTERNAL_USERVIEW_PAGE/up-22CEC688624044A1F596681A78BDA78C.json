@@ -1,0 +1,341 @@
+{
+    "elements": [
+        {
+            "elements": [
+                {
+                    "elements": [{
+                        "elements": [
+                            {
+                                "elements": [{
+                                    "className": "org.joget.plugin.enterprise.InformationTileComponent",
+                                    "properties": {
+                                        "template": "<!--{sampleWidth: '250px', tags: 'light-bg tag header donut'}-->\n<div class=\"card\" \n     style=\"height:{{height}};\n            background-color:{{bgColor}}; \n            background-image:url('{{bgImg}}');\">\n    <div class=\"card-header\" \n         style=\"background-color:transparent;\">\n        <div class=\"row\">\n            <div class=\"header-title col-8\">\n                {{header||VISITORS}}\n            <\/div>\n            <div class=\"header-tag col-4 text-end ps-0\">\n                <span class=\"badge\" \n                      style=\"background-color:{{tagColor||#1ab394}}; \n                             color:#fff;\">\n                    {{headerTag||Daily}}\n                <\/span>\n                {{reload}}\n            <\/div>\n        <\/div>    \n    <\/div>\n    <div class=\"card-body py-0 d-flex align-items-stretch\">\n        <div class=\"stats-icon col-4 py-4 pe-0 d-flex align-items-center h-100\">\n            <div id=\"chart-{{id}}\" \n                 data-chart-type=\"donut\" \n                 data-chart-custom=\"{{chartConfig}}\" \n                 data-chart-colors=\"{{chartColors}}\"   \n                 data-chart-config=\"{stroke:{width: 1}}\"   \n                 data-chart-labels=\"{{chartLabels||Item 1,Item 2,Item 3,Item 4}}\"\n                 data-chart-values=\"{{chartData||[25, 66, 41, 89]}}\">\n            <\/div>\n        <\/div>\n        <div class=\"stats-info py-3 pe-3 ps-2 col-8 align-items-stretch\">\n            <div class=\"d-flex flex-row align-items-center justify-content-between\" \n                 style=\"font-size: 24px; \n                        margin-bottom: 10px;\">\n                <span>\n                    {{value||1,000}}\n                <\/span>\n                <span style=\"font-size:12px; \n                             color:{{color||#563d7c}};\">\n                    {{subvalue||12% <i class=\"fas fa-level-up-alt\"><\/i>}}\n                <\/span>\n            <\/div>\n            <h4 style=\"font-size: 12px;\n                       color: rgba(0,0,0,.6);\n                       margin: 5px 0;\">\n                {{title||TOTAL VISITORS}}\n            <\/h4>\n        <\/div>            \n    <\/div>\n    <script>\n        $(function(){\n            // Render the chart following card height\n            let height = 60;\n            let cardHeight = $(\"#chart-{{id}}\").parent().height();\n            if(cardHeight > height){\n                height = cardHeight;\n            }\n            $(\"#chart-{{id}}\").attr('data-chart-height', height + 'px');\n            //End of Code\n            loadScript(\"{{contextPath}}/js/apexcharts-sparkline.js\", function(){\n                $(\"#chart-{{id}}\").acSparkline();\n            });\n        });\n    <\/script>\n<\/div>\n<!---->",
+                                        "attr-data-events-listening": [],
+                                        "color": "#348FE2",
+                                        "headerTag": "",
+                                        "tagColor": "",
+                                        "icon": "<i class=\"fas fa-globe\"><\/i>",
+                                        "link": "",
+                                        "bgImg": "",
+                                        "title": "TOTAL REQUESTS",
+                                        "customId": "",
+                                        "chartData": "",
+                                        "chartConfig": "",
+                                        "reload": "",
+                                        "bgColor": "",
+                                        "subvalue": "",
+                                        "header": "Total Requests",
+                                        "id": "2B297A630E6A417F9937FBD1EE14DF8A",
+                                        "value": "#datalist.total.cts_list_complaint#",
+                                        "chartLabels": "all requests",
+                                        "chartColors": "",
+                                        "height": ""
+                                    }
+                                }],
+                                "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                                "properties": {}
+                            },
+                            {
+                                "elements": [{
+                                    "className": "org.joget.plugin.enterprise.InformationTileComponent",
+                                    "properties": {
+                                        "template": "<!--{sampleWidth: '250px', tags: 'light-bg tag header donut'}-->\n<div class=\"card\" \n     style=\"height:{{height}};\n            background-color:{{bgColor}}; \n            background-image:url('{{bgImg}}');\">\n    <div class=\"card-header\" \n         style=\"background-color:transparent;\">\n        <div class=\"row\">\n            <div class=\"header-title col-8\">\n                {{header||VISITORS}}\n            <\/div>\n            <div class=\"header-tag col-4 text-end ps-0\">\n                <span class=\"badge\" \n                      style=\"background-color:{{tagColor||#1ab394}}; \n                             color:#fff;\">\n                    {{headerTag||Daily}}\n                <\/span>\n                {{reload}}\n            <\/div>\n        <\/div>    \n    <\/div>\n    <div class=\"card-body py-0 d-flex align-items-stretch\">\n        <div class=\"stats-icon col-4 py-4 pe-0 d-flex align-items-center h-100\">\n            <div id=\"chart-{{id}}\" \n                 data-chart-type=\"donut\" \n                 data-chart-custom=\"{{chartConfig}}\" \n                 data-chart-colors=\"{{chartColors}}\"   \n                 data-chart-config=\"{stroke:{width: 1}}\"   \n                 data-chart-labels=\"{{chartLabels||Item 1,Item 2,Item 3,Item 4}}\"\n                 data-chart-values=\"{{chartData||[25, 66, 41, 89]}}\">\n            <\/div>\n        <\/div>\n        <div class=\"stats-info py-3 pe-3 ps-2 col-8 align-items-stretch\">\n            <div class=\"d-flex flex-row align-items-center justify-content-between\" \n                 style=\"font-size: 24px; \n                        margin-bottom: 10px;\">\n                <span>\n                    {{value||1,000}}\n                <\/span>\n                <span style=\"font-size:12px; \n                             color:{{color||#563d7c}};\">\n                    {{subvalue||12% <i class=\"fas fa-level-up-alt\"><\/i>}}\n                <\/span>\n            <\/div>\n            <h4 style=\"font-size: 12px;\n                       color: rgba(0,0,0,.6);\n                       margin: 5px 0;\">\n                {{title||TOTAL VISITORS}}\n            <\/h4>\n        <\/div>            \n    <\/div>\n    <script>\n        $(function(){\n            // Render the chart following card height\n            let height = 60;\n            let cardHeight = $(\"#chart-{{id}}\").parent().height();\n            if(cardHeight > height){\n                height = cardHeight;\n            }\n            $(\"#chart-{{id}}\").attr('data-chart-height', height + 'px');\n            //End of Code\n            loadScript(\"{{contextPath}}/js/apexcharts-sparkline.js\", function(){\n                $(\"#chart-{{id}}\").acSparkline();\n            });\n        });\n    <\/script>\n<\/div>\n<!---->",
+                                        "attr-data-events-listening": [],
+                                        "color": "#348FE2",
+                                        "headerTag": "",
+                                        "tagColor": "",
+                                        "icon": "<i class=\"fas fa-globe\"><\/i>",
+                                        "link": "",
+                                        "bgImg": "",
+                                        "title": "PENDING REQUESTS",
+                                        "customId": "",
+                                        "chartData": "",
+                                        "chartConfig": "",
+                                        "reload": "",
+                                        "bgColor": "",
+                                        "subvalue": "",
+                                        "header": "Pending Requests",
+                                        "id": "F073BB6C7178436748876F6728DA6B99",
+                                        "value": "#datalist.size.cts_pending_request#",
+                                        "chartLabels": "uu",
+                                        "chartColors": "",
+                                        "height": ""
+                                    }
+                                }],
+                                "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                                "properties": {}
+                            }
+                        ],
+                        "className": "org.joget.apps.userview.lib.component.ColumnsComponent",
+                        "properties": {
+                            "gutter": "5px",
+                            "columns": [
+                                {"style-max-width": ""},
+                                {"style-max-width": ""}
+                            ],
+                            "css-mobile-stack-columns": "true",
+                            "id": "4E291BA7F87F4A6A8B5BF9885DD55EA0"
+                        }
+                    }],
+                    "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                    "properties": {}
+                },
+                {
+                    "elements": [{
+                        "elements": [
+                            {
+                                "elements": [{
+                                    "className": "org.joget.plugin.enterprise.InformationTileComponent",
+                                    "properties": {
+                                        "template": "<!--{sampleWidth: '250px', tags: 'light-bg tag header donut'}-->\n<div class=\"card\" \n     style=\"height:{{height}};\n            background-color:{{bgColor}}; \n            background-image:url('{{bgImg}}');\">\n    <div class=\"card-header\" \n         style=\"background-color:transparent;\">\n        <div class=\"row\">\n            <div class=\"header-title col-8\">\n                {{header||VISITORS}}\n            <\/div>\n            <div class=\"header-tag col-4 text-end ps-0\">\n                <span class=\"badge\" \n                      style=\"background-color:{{tagColor||#1ab394}}; \n                             color:#fff;\">\n                    {{headerTag||Daily}}\n                <\/span>\n                {{reload}}\n            <\/div>\n        <\/div>    \n    <\/div>\n    <div class=\"card-body py-0 d-flex align-items-stretch\">\n        <div class=\"stats-icon col-4 py-4 pe-0 d-flex align-items-center h-100\">\n            <div id=\"chart-{{id}}\" \n                 data-chart-type=\"donut\" \n                 data-chart-custom=\"{{chartConfig}}\" \n                 data-chart-colors=\"{{chartColors}}\"   \n                 data-chart-config=\"{stroke:{width: 1}}\"   \n                 data-chart-labels=\"{{chartLabels||Item 1,Item 2,Item 3,Item 4}}\"\n                 data-chart-values=\"{{chartData||[25, 66, 41, 89]}}\">\n            <\/div>\n        <\/div>\n        <div class=\"stats-info py-3 pe-3 ps-2 col-8 align-items-stretch\">\n            <div class=\"d-flex flex-row align-items-center justify-content-between\" \n                 style=\"font-size: 24px; \n                        margin-bottom: 10px;\">\n                <span>\n                    {{value||1,000}}\n                <\/span>\n                <span style=\"font-size:12px; \n                             color:{{color||#563d7c}};\">\n                    {{subvalue||12% <i class=\"fas fa-level-up-alt\"><\/i>}}\n                <\/span>\n            <\/div>\n            <h4 style=\"font-size: 12px;\n                       color: rgba(0,0,0,.6);\n                       margin: 5px 0;\">\n                {{title||TOTAL VISITORS}}\n            <\/h4>\n        <\/div>            \n    <\/div>\n    <script>\n        $(function(){\n            // Render the chart following card height\n            let height = 60;\n            let cardHeight = $(\"#chart-{{id}}\").parent().height();\n            if(cardHeight > height){\n                height = cardHeight;\n            }\n            $(\"#chart-{{id}}\").attr('data-chart-height', height + 'px');\n            //End of Code\n            loadScript(\"{{contextPath}}/js/apexcharts-sparkline.js\", function(){\n                $(\"#chart-{{id}}\").acSparkline();\n            });\n        });\n    <\/script>\n<\/div>\n<!---->",
+                                        "attr-data-events-listening": [],
+                                        "color": "#348FE2",
+                                        "headerTag": "",
+                                        "tagColor": "",
+                                        "icon": "<i class=\"fas fa-globe\"><\/i>",
+                                        "link": "",
+                                        "bgImg": "",
+                                        "title": "Rejected Requests",
+                                        "customId": "",
+                                        "chartData": "",
+                                        "chartConfig": "",
+                                        "reload": "",
+                                        "bgColor": "",
+                                        "subvalue": "",
+                                        "header": "Rejected Requests",
+                                        "id": "90616C753AD048F70285EEC69E3C9157",
+                                        "value": "#datalist.size.cts_rejected_request#",
+                                        "chartLabels": "u",
+                                        "chartColors": "",
+                                        "height": ""
+                                    }
+                                }],
+                                "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                                "properties": {}
+                            },
+                            {
+                                "elements": [{
+                                    "className": "org.joget.plugin.enterprise.InformationTileComponent",
+                                    "properties": {
+                                        "template": "<!--{sampleWidth: '250px', tags: 'light-bg tag header donut'}-->\n<div class=\"card\" \n     style=\"height:{{height}};\n            background-color:{{bgColor}}; \n            background-image:url('{{bgImg}}');\">\n    <div class=\"card-header\" \n         style=\"background-color:transparent;\">\n        <div class=\"row\">\n            <div class=\"header-title col-8\">\n                {{header||VISITORS}}\n            <\/div>\n            <div class=\"header-tag col-4 text-end ps-0\">\n                <span class=\"badge\" \n                      style=\"background-color:{{tagColor||#1ab394}}; \n                             color:#fff;\">\n                    {{headerTag||Daily}}\n                <\/span>\n                {{reload}}\n            <\/div>\n        <\/div>    \n    <\/div>\n    <div class=\"card-body py-0 d-flex align-items-stretch\">\n        <div class=\"stats-icon col-4 py-4 pe-0 d-flex align-items-center h-100\">\n            <div id=\"chart-{{id}}\" \n                 data-chart-type=\"donut\" \n                 data-chart-custom=\"{{chartConfig}}\" \n                 data-chart-colors=\"{{chartColors}}\"   \n                 data-chart-config=\"{stroke:{width: 1}}\"   \n                 data-chart-labels=\"{{chartLabels||Item 1,Item 2,Item 3,Item 4}}\"\n                 data-chart-values=\"{{chartData||[25, 66, 41, 89]}}\">\n            <\/div>\n        <\/div>\n        <div class=\"stats-info py-3 pe-3 ps-2 col-8 align-items-stretch\">\n            <div class=\"d-flex flex-row align-items-center justify-content-between\" \n                 style=\"font-size: 24px; \n                        margin-bottom: 10px;\">\n                <span>\n                    {{value||1,000}}\n                <\/span>\n                <span style=\"font-size:12px; \n                             color:{{color||#563d7c}};\">\n                    {{subvalue||12% <i class=\"fas fa-level-up-alt\"><\/i>}}\n                <\/span>\n            <\/div>\n            <h4 style=\"font-size: 12px;\n                       color: rgba(0,0,0,.6);\n                       margin: 5px 0;\">\n                {{title||TOTAL VISITORS}}\n            <\/h4>\n        <\/div>            \n    <\/div>\n    <script>\n        $(function(){\n            // Render the chart following card height\n            let height = 60;\n            let cardHeight = $(\"#chart-{{id}}\").parent().height();\n            if(cardHeight > height){\n                height = cardHeight;\n            }\n            $(\"#chart-{{id}}\").attr('data-chart-height', height + 'px');\n            //End of Code\n            loadScript(\"{{contextPath}}/js/apexcharts-sparkline.js\", function(){\n                $(\"#chart-{{id}}\").acSparkline();\n            });\n        });\n    <\/script>\n<\/div>\n<!---->",
+                                        "attr-data-events-listening": [],
+                                        "color": "#348FE2",
+                                        "headerTag": "",
+                                        "tagColor": "",
+                                        "icon": "<i class=\"fas fa-globe\"><\/i>",
+                                        "link": "",
+                                        "bgImg": "",
+                                        "title": "Resolved Request",
+                                        "customId": "",
+                                        "chartData": "",
+                                        "chartConfig": "",
+                                        "reload": "",
+                                        "bgColor": "",
+                                        "subvalue": "",
+                                        "header": "Resolved Request",
+                                        "id": "A6F81D00B10842B46F2B72768BAE5872",
+                                        "value": "#datalist.size.cts_resolved_request#",
+                                        "chartLabels": "u",
+                                        "chartColors": "",
+                                        "height": ""
+                                    }
+                                }],
+                                "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                                "properties": {}
+                            }
+                        ],
+                        "className": "org.joget.apps.userview.lib.component.ColumnsComponent",
+                        "properties": {
+                            "gutter": "5px",
+                            "columns": [
+                                {"style-max-width": ""},
+                                {"style-max-width": ""}
+                            ],
+                            "css-mobile-stack-columns": "true",
+                            "id": "67FA30D0E1784EE3E7A517A140C3B53C"
+                        }
+                    }],
+                    "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                    "properties": {}
+                }
+            ],
+            "className": "org.joget.apps.userview.lib.component.ColumnsComponent",
+            "properties": {
+                "gutter": "5px",
+                "columns": [
+                    {"style-max-width": ""},
+                    {"style-max-width": ""}
+                ],
+                "css-mobile-stack-columns": "true",
+                "id": "0129F805C8134B0A735F0FC39AD9E9E1"
+            }
+        },
+        {"className": "menu-component"},
+        {
+            "elements": [
+                {
+                    "elements": [
+                        {
+                            "elements": [{
+                                "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                                "properties": {
+                                    "stack": "",
+                                    "xAxisDisplayAS": "",
+                                    "showLegend": "true",
+                                    "customFooter": "",
+                                    "enableOffline": "",
+                                    "title": "Chart Title",
+                                    "customId": "",
+                                    "chartHeight": "80%",
+                                    "mapping_x": "status",
+                                    "yaxisPrefix": "",
+                                    "applyFormatter": "",
+                                    "categoryAxisLabel": "Category",
+                                    "horizontal": "",
+                                    "library": "echart",
+                                    "theme": "",
+                                    "showValueLabel": "true",
+                                    "id": "681D4BC7EBFD41870228FFF5FFE977E4",
+                                    "series_customization": [],
+                                    "binder": {
+                                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                                        "properties": {
+                                            "joins": [],
+                                            "having": [],
+                                            "aggregateField": [{
+                                                "field": "status",
+                                                "function": "AFD_COUNT_"
+                                            }],
+                                            "formDefId": "cts_compliant_form",
+                                            "customSelectionValue": "",
+                                            "extraCondition": "",
+                                            "filters": [],
+                                            "groupBy": "status",
+                                            "cacheRowCount": "",
+                                            "functionColumns": []
+                                        }
+                                    },
+                                    "sortingOrder": "ASC",
+                                    "customHeader": "",
+                                    "valueAxisLabel": "Value",
+                                    "sortingOrderByColumn": "status",
+                                    "keyName": "",
+                                    "label": "Chart",
+                                    "chartWidth": "100%",
+                                    "xAxisBoundaryGap": "",
+                                    "userviewCacheDuration": "",
+                                    "userviewCacheScope": "",
+                                    "datasource": "binder",
+                                    "mapping_ys": [{
+                                        "customization": "",
+                                        "legend": "Status",
+                                        "y": "AFD_COUNT_status"
+                                    }],
+                                    "chartType": "bar",
+                                    "showTable": "",
+                                    "optionCustomization": "",
+                                    "chartUseAllDataRows": ""
+                                }
+                            }],
+                            "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                            "properties": {}
+                        },
+                        {
+                            "elements": [{
+                                "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                                "properties": {
+                                    "xAxisDisplayAS": "",
+                                    "mapping_value": "AFD_COUNT_priority",
+                                    "showLegend": "true",
+                                    "customFooter": "",
+                                    "enableOffline": "",
+                                    "title": "Chart Title",
+                                    "customId": "",
+                                    "chartHeight": "80%",
+                                    "applyFormatter": "",
+                                    "categoryAxisLabel": "Category",
+                                    "library": "echart",
+                                    "theme": "",
+                                    "showValueLabel": "true",
+                                    "id": "59FA4E46D8FB4B67573888B899FA7E30",
+                                    "binder": {
+                                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                                        "properties": {
+                                            "joins": [],
+                                            "having": [],
+                                            "aggregateField": [{
+                                                "field": "priority",
+                                                "function": "AFD_COUNT_"
+                                            }],
+                                            "formDefId": "cts_compliant_form",
+                                            "customSelectionValue": "",
+                                            "extraCondition": "",
+                                            "filters": [],
+                                            "groupBy": "priority",
+                                            "cacheRowCount": "",
+                                            "functionColumns": []
+                                        }
+                                    },
+                                    "sortingOrder": "ASC",
+                                    "customHeader": "",
+                                    "valueAxisLabel": "Value",
+                                    "seriesCustomization": "",
+                                    "sortingOrderByColumn": "priority",
+                                    "mapping_legend": "priority",
+                                    "keyName": "",
+                                    "label": "Chart",
+                                    "chartWidth": "100%",
+                                    "showValue": "true",
+                                    "userviewCacheDuration": "",
+                                    "userviewCacheScope": "",
+                                    "datasource": "binder",
+                                    "chartType": "pie",
+                                    "showTable": "",
+                                    "optionCustomization": "",
+                                    "chartUseAllDataRows": ""
+                                }
+                            }],
+                            "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                            "properties": {}
+                        }
+                    ],
+                    "className": "org.joget.apps.userview.lib.component.ColumnsComponent",
+                    "properties": {
+                        "gutter": "5px",
+                        "columns": [
+                            {"style-max-width": ""},
+                            {"style-max-width": ""}
+                        ],
+                        "css-mobile-stack-columns": "true",
+                        "id": "A85DC0B330D84D41E282E12B0CB94EF2"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "cts_list_complaint",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "2C5BF61E08F64867BA1C8CE0E45666A7"
+                    }
+                }
+            ],
+            "className": "org.joget.apps.userview.lib.component.ContainerComponent",
+            "properties": {"id": "6151D1B594EB453482769CDB25478192"}
+        }
+    ],
+    "className": "org.joget.apps.userview.model.UserviewPage",
+    "properties": {"id": "up-22CEC688624044A1F596681A78BDA78C"}
+}

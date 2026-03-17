@@ -193,20 +193,12 @@
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [{
-                "className": "org.joget.rbuilder.lib.ReportUserviewMenu",
+                "className": "org.joget.plugin.enterprise.DashboardMenu",
                 "properties": {
-                    "fileName": "",
-                    "customHeader": "",
-                    "userviewCacheDuration": "",
-                    "reportId": "rp_complaint_report",
-                    "userviewCacheScope": "",
-                    "reportParams": [],
-                    "customFooter": "",
-                    "label": "Complaint Report",
-                    "id": "B1311AC514C6491A8806BCAA23156C69",
-                    "enableOffline": "",
-                    "iconIncluded": false,
-                    "customId": ""
+                    "mode": "plugins",
+                    "defaultPortletHeight": "250",
+                    "label": "Dashboard",
+                    "id": "22CEC688624044A1F596681A78BDA78C"
                 }
             }],
             "properties": {
