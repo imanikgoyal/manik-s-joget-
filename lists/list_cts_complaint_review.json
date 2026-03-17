@@ -1,4 +1,8 @@
 {
+    "template": {
+        "className": "",
+        "properties": {}
+    },
     "useSession": "false",
     "showPageSizeSelector": "true",
     "rowActions": [],
@@ -27,6 +31,38 @@
             "name": "customer_id",
             "id": "column_4",
             "label": "Customer ID"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "category",
+            "id": "column_6",
+            "label": "Complaint Category",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "priority",
+            "id": "column_7",
+            "label": "Priority",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "assigned_to",
+            "id": "column_5",
+            "label": "Assigned To (Agent)",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "status",
+            "id": "column_8",
+            "label": "Status",
+            "sortable": "false"
         }
     ],
     "pageSize": 0,
