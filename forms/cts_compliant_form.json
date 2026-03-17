@@ -1,7 +1,18 @@
 {
     "elements": [{
         "elements": [{
-            "elements": [],
+            "elements": [{
+                "className": "org.joget.apps.form.lib.IdGeneratorField",
+                "properties": {
+                    "hidden": "",
+                    "format": "ID-??????",
+                    "workflowVariable": "",
+                    "envVariable": "counter",
+                    "isDistributedGeneration": "",
+                    "label": "ID Generator",
+                    "id": "id"
+                }
+            }],
             "className": "org.joget.apps.form.model.Column",
             "properties": {"width": "100%"}
         }],
