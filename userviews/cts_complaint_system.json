@@ -189,6 +189,30 @@
                 "label": "New Category",
                 "id": "category-D129F72C9AFB465AD6B59731B7A67DB0"
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.rbuilder.lib.ReportUserviewMenu",
+                "properties": {
+                    "fileName": "",
+                    "customHeader": "",
+                    "userviewCacheDuration": "",
+                    "reportId": "rp_complaint_report",
+                    "userviewCacheScope": "",
+                    "reportParams": [],
+                    "customFooter": "",
+                    "label": "Complaint Report",
+                    "id": "B1311AC514C6491A8806BCAA23156C69",
+                    "enableOffline": "",
+                    "iconIncluded": false,
+                    "customId": ""
+                }
+            }],
+            "properties": {
+                "label": "New Category",
+                "id": "category-A4C7870E3FC0429DA0CB21BDDDF43773"
+            }
         }
     ],
     "properties": {
