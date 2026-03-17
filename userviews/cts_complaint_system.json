@@ -213,6 +213,62 @@
                 "label": "New Category",
                 "id": "category-A4C7870E3FC0429DA0CB21BDDDF43773"
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "list-customFooter": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "edit-customHeader": "",
+                    "editFormId": "cts_complaint_review",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-saveButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "list-newButtonLabel": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-prevButtonLabel": "",
+                    "add-afterSavedRedirectParamName": "",
+                    "customId": "cts_complaint_review_crud",
+                    "edit-afterSaved": "list",
+                    "list-deleteButtonLabel": "",
+                    "checkboxPosition": "left",
+                    "selectionType": "multiple",
+                    "add-customFooter": "",
+                    "addFormId": "cts_complaint_review",
+                    "edit-allowRecordTraveling": "",
+                    "id": "f63f0912-4c21-404e-991b-f0ab7c6035a6",
+                    "rowCount": "true",
+                    "add-messageShowAfterComplete": "",
+                    "edit-readonlyLabel": "",
+                    "list-editLinkLabel": "",
+                    "add-cancelButtonLabel": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-customFooter": "",
+                    "keyName": "",
+                    "label": "Manage Complaint Review Form",
+                    "add-customHeader": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-readonly": "",
+                    "buttonPosition": "bothLeft",
+                    "edit-firstButtonLabel": "",
+                    "datalistId": "list_cts_complaint_review",
+                    "add-saveButtonLabel": "",
+                    "edit-nextButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "list-moreActions": [],
+                    "add-afterSaved": "list",
+                    "edit-backButtonLabel": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "list-customHeader": ""
+                }
+            }],
+            "properties": {
+                "id": "category-002049ad-276f-403e-9e55-0e03f635ad8d",
+                "label": "<i class='fa fa-tasks'><\/i>Manage Complaint Review Form"
+            }
         }
     ],
     "properties": {
