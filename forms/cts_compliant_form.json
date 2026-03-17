@@ -1,34 +1,549 @@
 {
-    "elements": [{
-        "elements": [{
+    "elements": [
+        {
             "elements": [{
-                "className": "org.joget.apps.form.lib.IdGeneratorField",
-                "properties": {
-                    "hidden": "",
-                    "format": "ID-??????",
-                    "workflowVariable": "",
-                    "envVariable": "counter",
-                    "isDistributedGeneration": "",
-                    "label": "ID Generator",
-                    "id": "id"
-                }
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.IdGeneratorField",
+                    "properties": {
+                        "hidden": "",
+                        "format": "CMP-??????",
+                        "workflowVariable": "",
+                        "envVariable": "counter",
+                        "isDistributedGeneration": "",
+                        "label": "Complaint ID",
+                        "id": "id"
+                    }
+                }],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
             }],
-            "className": "org.joget.apps.form.model.Column",
-            "properties": {"width": "100%"}
-        }],
-        "className": "org.joget.apps.form.model.Section",
-        "properties": {
-            "label": "Section",
-            "id": "section1"
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "label": "🔗 Complaint Reference",
+                "id": "section_reference"
+            }
+        },
+        {
+            "elements": [
+                {
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "readonly": "",
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "message": "Full Name is required",
+                                        "mandatory": "true"
+                                    }
+                                },
+                                "label": "Full Name",
+                                "id": "fullname",
+                                "placeholder": "Enter your full name",
+                                "required": "true",
+                                "readonlyLabel": "",
+                                "storeNumeric": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "readonly": "",
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "message": "Phone Number is required",
+                                        "mandatory": "true"
+                                    }
+                                },
+                                "label": "Phone Number",
+                                "id": "phone",
+                                "placeholder": "e.g. +60123456789",
+                                "required": "true",
+                                "readonlyLabel": "",
+                                "storeNumeric": ""
+                            }
+                        }
+                    ],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "50%"}
+                },
+                {
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "readonly": "",
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "message": "Email Address is required",
+                                        "mandatory": "true"
+                                    }
+                                },
+                                "label": "Email Address",
+                                "id": "email",
+                                "placeholder": "Enter your email address",
+                                "required": "true",
+                                "readonlyLabel": "",
+                                "storeNumeric": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "readonly": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "label": "Customer ID",
+                                "id": "customer_id",
+                                "placeholder": "Enter your Customer ID (if any)",
+                                "required": "false",
+                                "readonlyLabel": "",
+                                "storeNumeric": ""
+                            }
+                        }
+                    ],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "50%"}
+                }
+            ],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionReadonly": "",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Section 1 \u2014 Complainant Information",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "section_complainant",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [
+                {
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "readonly": "",
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "message": "Complaint Title is required",
+                                        "mandatory": "true"
+                                    }
+                                },
+                                "label": "Complaint Title",
+                                "id": "complaint_title",
+                                "placeholder": "Brief title of your complaint",
+                                "required": "true",
+                                "readonlyLabel": "",
+                                "storeNumeric": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "readonly": "",
+                                "options": [
+                                    {
+                                        "label": "-- Please Select --",
+                                        "value": "",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Billing",
+                                        "value": "billing",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Product Quality",
+                                        "value": "product_quality",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Delivery",
+                                        "value": "delivery",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Customer Service",
+                                        "value": "customer_service",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Technical Support",
+                                        "value": "technical_support",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Other",
+                                        "value": "other",
+                                        "grouping": ""
+                                    }
+                                ],
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "message": "Please select a Complaint Category",
+                                        "mandatory": "true"
+                                    }
+                                },
+                                "label": "Complaint Category",
+                                "id": "category",
+                                "readonlyLabel": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "readonly": "",
+                                "options": [
+                                    {
+                                        "label": "-- Please Select --",
+                                        "value": "",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "🟢 Low",
+                                        "value": "low",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "🟡 Medium",
+                                        "value": "medium",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "🔴 High",
+                                        "value": "high",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "🚨 Critical",
+                                        "value": "critical",
+                                        "grouping": ""
+                                    }
+                                ],
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "message": "Please select a Priority",
+                                        "mandatory": "true"
+                                    }
+                                },
+                                "label": "Priority",
+                                "id": "priority",
+                                "readonlyLabel": ""
+                            }
+                        }
+                    ],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "50%"}
+                },
+                {
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.DatePicker",
+                            "properties": {
+                                "readonly": "true",
+                                "dataFormat": "yyyy-MM-dd",
+                                "format": "dd-MM-yyyy",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "label": "Submission Date",
+                                "id": "submission_date",
+                                "readonlyLabel": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "properties": {
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "label": "Supporting Document (Optional)",
+                                "id": "attachment",
+                                "required": "false"
+                            }
+                        }
+                    ],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "50%"}
+                }
+            ],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionReadonly": "",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Section 2 \u2014 Complaint Details",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "section_complaint",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.TextArea",
+                    "properties": {
+                        "readonly": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "message": "Complaint Description is required",
+                                "mandatory": "true"
+                            }
+                        },
+                        "label": "Complaint Description",
+                        "id": "description",
+                        "placeholder": "Please describe your complaint in detail...",
+                        "rows": "6",
+                        "readonlyLabel": ""
+                    }
+                }],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionReadonly": "",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Section 3 \u2014 Description",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "section_description",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [
+                {
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "multiple": "",
+                                "label": "Status",
+                                "readonly": "",
+                                "size": "",
+                                "optionsBinder": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "options": [
+                                    {
+                                        "label": "-- Please Select --",
+                                        "value": "",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "New",
+                                        "value": "new",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Assigned",
+                                        "value": "assigned",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "In Progress",
+                                        "value": "in_progress",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Pending Review",
+                                        "value": "pending_review",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Resolved",
+                                        "value": "resolved",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Closed",
+                                        "value": "closed",
+                                        "grouping": ""
+                                    },
+                                    {
+                                        "label": "Rejected",
+                                        "value": "rejected",
+                                        "grouping": ""
+                                    }
+                                ],
+                                "workflowVariable": "",
+                                "id": "status",
+                                "iconIncluded": false,
+                                "value": "",
+                                "readonlyLabel": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.DatePicker",
+                            "properties": {
+                                "readonly": "",
+                                "dataFormat": "yyyy-MM-dd",
+                                "format": "dd-MM-yyyy",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "label": "Resolved Date",
+                                "id": "resolved_date",
+                                "readonlyLabel": ""
+                            }
+                        }
+                    ],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "50%"}
+                },
+                {
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "readonly": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "label": "Assigned To (Agent)",
+                                "id": "assigned_to",
+                                "placeholder": "Agent username or name",
+                                "readonlyLabel": "",
+                                "storeNumeric": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextArea",
+                            "properties": {
+                                "readonly": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "label": "Resolution Notes",
+                                "id": "resolution_notes",
+                                "placeholder": "Describe the resolution or actions taken...",
+                                "rows": "4",
+                                "readonlyLabel": ""
+                            }
+                        }
+                    ],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "50%"}
+                }
+            ],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionReadonly": "",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Section 4 \u2014 Internal Use Only",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "section_internal",
+                "join": "",
+                "readonlyLabel": ""
+            }
         }
-    }],
+    ],
     "className": "org.joget.apps.form.model.Form",
     "properties": {
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Complaint Form",
-        "description": "",
+        "description": "Customer Complaint Portal - Submission Form",
         "id": "cts_compliant_form",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "cts_complaint_table"
     }
 }
