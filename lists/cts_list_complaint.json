@@ -16,50 +16,140 @@
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Full Name",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "c_fullname",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_1",
-            "label": "c_fullname",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Phone",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "c_phone",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_2",
-            "label": "c_phone",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Email",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "c_email",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_3",
-            "label": "c_email",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Customer ID",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "c_customer_id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_4",
-            "label": "c_customer_id",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Priority",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "c_priority",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_5",
-            "label": "c_priority",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Status",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "c_status",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_6",
-            "label": "c_status",
-            "sortable": "false"
+            "alignment": ""
         }
     ],
     "pageSize": "0",
