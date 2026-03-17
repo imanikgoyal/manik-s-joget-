@@ -3,6 +3,14 @@
     "header": {"elements": []},
     "body": {"elements": [
         {
+            "className": "org.joget.rbuilder.lib.HtmlReportElement",
+            "properties": {
+                "html": "<div id=\"totalRequestTile\" style=\"\n    padding: 12px 16px;\n    border-radius: 8px;\n    background: #f5f7fa;\n    border: 1px solid #ddd;\n    font-size: 16px;\n    font-weight: 500;\n    color: #333;\n    margin-bottom: 15px;\n\">\n     Total Requests: <b><span id=\"totalRequestCount\">0<\/span><\/b>\n<\/div>\n\n<script>\n$(document).ready(function () {\n    let total = 0;\n\n    // pick first table in report (your datalist)\n    const table = $('table');\n\n    if (table.length) {\n        total = table.find('tbody tr').length;\n    }\n\n    $('#totalRequestCount').text(total);\n});\n<\/script>",
+                "id": "8F2B751C-2A71-497E-0362-F67FFCBEC2F8",
+                "selectorClass": ""
+            }
+        },
+        {
             "className": "org.joget.rbuilder.lib.ListReportElement",
             "properties": {
                 "headerTextColor": "",
