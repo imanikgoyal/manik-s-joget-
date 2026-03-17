@@ -168,6 +168,27 @@
                 "id": "category-9A8F211A9CF541BA82612F8BE4BA631A",
                 "iconIncluded": false
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "com.example.joget.RequestDashboard",
+                "properties": {
+                    "formId": "cts_compliant_form",
+                    "userviewCacheDuration": "",
+                    "userviewCacheScope": "",
+                    "id": "94B9DA0B1C184B7086C01143B4201B59",
+                    "label": "Request Dashboard",
+                    "enableOffline": "",
+                    "iconIncluded": false,
+                    "tablename": "cts_complaint_table",
+                    "customId": ""
+                }
+            }],
+            "properties": {
+                "label": "New Category",
+                "id": "category-D129F72C9AFB465AD6B59731B7A67DB0"
+            }
         }
     ],
     "properties": {
