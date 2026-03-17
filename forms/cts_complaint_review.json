@@ -284,8 +284,8 @@
                             "className": "org.joget.apps.form.lib.DatePicker",
                             "properties": {
                                 "permissionHidden": "",
-                                "yearRange": "2020",
-                                "dataFormat": "yyyy-MM-dd",
+                                "yearRange": "2026",
+                                "dataFormat": "",
                                 "startDateFieldId": "",
                                 "format": "dd-MM-yyyy",
                                 "validator": {
