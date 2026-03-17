@@ -428,7 +428,7 @@
                                         "grouping": ""
                                     }
                                 ],
-                                "workflowVariable": "",
+                                "workflowVariable": "status",
                                 "id": "status",
                                 "iconIncluded": false,
                                 "value": "",
