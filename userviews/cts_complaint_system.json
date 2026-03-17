@@ -196,9 +196,17 @@
                 "className": "org.joget.plugin.enterprise.DashboardMenu",
                 "properties": {
                     "mode": "plugins",
+                    "customHeader": "",
+                    "userviewCacheDuration": "",
                     "defaultPortletHeight": "250",
+                    "userviewCacheScope": "",
+                    "plugins": [],
+                    "customFooter": "",
                     "label": "Dashboard",
-                    "id": "22CEC688624044A1F596681A78BDA78C"
+                    "id": "22CEC688624044A1F596681A78BDA78C",
+                    "enableOffline": "",
+                    "iconIncluded": false,
+                    "customId": ""
                 }
             }],
             "properties": {
