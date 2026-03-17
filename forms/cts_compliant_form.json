@@ -404,33 +404,13 @@
                                         "grouping": ""
                                     },
                                     {
-                                        "label": "New",
-                                        "value": "new",
-                                        "grouping": ""
-                                    },
-                                    {
-                                        "label": "Assigned",
-                                        "value": "assigned",
-                                        "grouping": ""
-                                    },
-                                    {
                                         "label": "In Progress",
                                         "value": "in_progress",
                                         "grouping": ""
                                     },
                                     {
-                                        "label": "Pending Review",
-                                        "value": "pending_review",
-                                        "grouping": ""
-                                    },
-                                    {
                                         "label": "Resolved",
                                         "value": "resolved",
-                                        "grouping": ""
-                                    },
-                                    {
-                                        "label": "Closed",
-                                        "value": "closed",
                                         "grouping": ""
                                     },
                                     {
