@@ -418,11 +418,6 @@
                                         "grouping": ""
                                     },
                                     {
-                                        "label": "In Progress",
-                                        "value": "in_progress",
-                                        "grouping": ""
-                                    },
-                                    {
                                         "label": "Resolved",
                                         "value": "resolved",
                                         "grouping": ""
