@@ -284,7 +284,7 @@
                             "properties": {
                                 "permissionHidden": "",
                                 "yearRange": "2026",
-                                "dataFormat": "yyyy-MM-dd",
+                                "dataFormat": "",
                                 "startDateFieldId": "",
                                 "format": "dd-MM-yyyy",
                                 "validator": {
