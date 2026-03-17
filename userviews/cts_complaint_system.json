@@ -1,25 +1,79 @@
 {
     "className": "org.joget.apps.userview.model.Userview",
-    "categories": [{
-        "className": "org.joget.apps.userview.model.UserviewCategory",
-        "menus": [{
-            "className": "org.joget.apps.userview.lib.HtmlPage",
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "keyName": "",
+                        "label": "Request for Complaint",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "",
+                        "messageShowAfterComplete": "",
+                        "userviewCacheDuration": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "2E49335D0135403FA8555DBDBC4534A8",
+                        "iconIncluded": false,
+                        "processDefId": "process1",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                    "properties": {
+                        "appFilter": "all",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "assignment-customHeader": "",
+                        "keyName": "",
+                        "assignment-customFooter": "",
+                        "label": "Review Request",
+                        "enableOffline": "",
+                        "customId": "",
+                        "showDetail": "",
+                        "datalistId": "list_cts_complaint_review",
+                        "userviewCacheDuration": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "showPopup": "",
+                        "rowCount": "",
+                        "id": "6ED0B628869048CA676148436258576C",
+                        "iconIncluded": false,
+                        "list-customHeader": ""
+                    }
+                }
+            ],
             "properties": {
-                "userviewCacheDuration": "",
-                "userviewCacheScope": "",
-                "id": "9ec2bc1a-b8d8-4cd3-9a88-aea1524c0546",
-                "label": "Welcome",
-                "enableOffline": "",
-                "customId": "welcome",
-                "content": "<p>p<\/p>",
-                "style-display": "none"
+                "hide": "",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "Request For Complaint",
+                "id": "category-1D79AFA46C1C4DE11996E5A69C6B2FB0",
+                "iconIncluded": false
             }
-        }],
-        "properties": {
-            "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
-            "label": "<i class='fa fa-home'><\/i> Home"
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [],
+            "properties": {
+                "label": "New Category",
+                "id": "category-9A8F211A9CF541BA82612F8BE4BA631A"
+            }
         }
-    }],
+    ],
     "properties": {
         "logoutText": "Logout",
         "welcomeMessage": "#date.EEE, d MMM yyyy#",
@@ -29,9 +83,7 @@
         "id": "cts_complaint_system"
     },
     "setting": {"properties": {
-        "mobileViewDisabled": "",
         "userviewDescription": "",
-        "mobileCacheEnabled": "",
         "userviewId": "cts_complaint_system",
         "theme": {
             "className": "org.joget.plugin.enterprise.BuilderTheme",
@@ -55,6 +107,7 @@
                 "dx8-dark-sidebar-navLinkIcon": "rgba(255, 255, 255, 0.65)",
                 "dx8headerFontColor": "#003A70",
                 "dx8-dark-subMenuColor": "rgba(255, 255, 255, 0.65)",
+                "mobileViewDisabled": "",
                 "dx8navLinkIcon": "#2C5E8A",
                 "horizontal_menu": "dark-sidebar",
                 "global-sidebarWidth": "280px",
@@ -99,6 +152,7 @@
                 "global-boxShadowSecondary": "0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05)",
                 "dx8-dark-sidebar-navScrollbarThumb": "#4D5F82",
                 "dx8contentFontColor": "#003A70",
+                "mobileCacheEnabled": "",
                 "dx8footerBackground": "#FFFFFF",
                 "global-borderRadius": "6px",
                 "dx8navDropdownBackground": "#F8FDFF",
