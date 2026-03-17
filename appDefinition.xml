@@ -31,17 +31,7 @@
                </packageActivityForm>
             </entry>
          </packageActivityFormMap>
-         <packageActivityPluginMap>
-            <entry>
-               <string>process1::tool1</string>
-               <packageActivityPlugin>
-                  <processDefId>process1</processDefId>
-                  <activityDefId>tool1</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.plugin.enterprise.FormDataUpdateTool&quot;,&quot;properties&quot;:{&quot;formDefId&quot;:&quot;cts_complaint_review&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;status&quot;,&quot;value&quot;:&quot;Approved&quot;}]}}]}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-         </packageActivityPluginMap>
+         <packageActivityPluginMap/>
          <packageParticipantMap>
             <entry>
                <string>process1::process1_participant1</string>
