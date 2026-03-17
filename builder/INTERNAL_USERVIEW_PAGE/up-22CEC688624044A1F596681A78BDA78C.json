@@ -95,7 +95,7 @@
                                         "icon": "<i class=\"fas fa-globe\"><\/i>",
                                         "link": "",
                                         "bgImg": "",
-                                        "title": "Rejected Requests",
+                                        "title": "REJECTED REQUESTS",
                                         "customId": "",
                                         "chartData": "",
                                         "chartConfig": "",
@@ -125,7 +125,7 @@
                                         "icon": "<i class=\"fas fa-globe\"><\/i>",
                                         "link": "",
                                         "bgImg": "",
-                                        "title": "Resolved Request",
+                                        "title": "RESOLVED REQUESTS",
                                         "customId": "",
                                         "chartData": "",
                                         "chartConfig": "",
@@ -184,7 +184,7 @@
                                     "showLegend": "true",
                                     "customFooter": "",
                                     "enableOffline": "",
-                                    "title": "Chart Title",
+                                    "title": "Requests Based On Status",
                                     "customId": "",
                                     "chartHeight": "80%",
                                     "mapping_x": "status",
@@ -249,7 +249,7 @@
                                     "showLegend": "true",
                                     "customFooter": "",
                                     "enableOffline": "",
-                                    "title": "Chart Title",
+                                    "title": "Requests Based On Priorities",
                                     "customId": "",
                                     "chartHeight": "80%",
                                     "applyFormatter": "",
@@ -330,6 +330,10 @@
                         "rowCount": "",
                         "id": "2C5BF61E08F64867BA1C8CE0E45666A7"
                     }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.HtmlCodeComponent",
+                    "properties": {"id": "842A3D3E958F4307259EF073D907A4DB"}
                 }
             ],
             "className": "org.joget.apps.userview.lib.component.ContainerComponent",
