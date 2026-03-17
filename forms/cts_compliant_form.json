@@ -169,7 +169,23 @@
                         {
                             "className": "org.joget.apps.form.lib.SelectBox",
                             "properties": {
+                                "controlField": "",
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "type": "",
+                                        "message": "Please select a Complaint Category",
+                                        "mandatory": "true"
+                                    }
+                                },
+                                "multiple": "",
+                                "label": "Complaint Category",
                                 "readonly": "",
+                                "size": "",
+                                "optionsBinder": {
+                                    "className": "",
+                                    "properties": {}
+                                },
                                 "options": [
                                     {
                                         "label": "-- Please Select --",
@@ -207,15 +223,10 @@
                                         "grouping": ""
                                     }
                                 ],
-                                "validator": {
-                                    "className": "org.joget.apps.form.lib.DefaultValidator",
-                                    "properties": {
-                                        "message": "Please select a Complaint Category",
-                                        "mandatory": "true"
-                                    }
-                                },
-                                "label": "Complaint Category",
+                                "workflowVariable": "",
                                 "id": "category",
+                                "iconIncluded": false,
+                                "value": "",
                                 "readonlyLabel": ""
                             }
                         },
