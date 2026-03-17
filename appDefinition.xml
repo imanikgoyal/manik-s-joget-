@@ -9,6 +9,15 @@
          <name>Complaint Ticket System</name>
          <packageActivityFormMap>
             <entry>
+               <string>process2::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>process2</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>process1::runProcess</string>
                <packageActivityForm>
                   <processDefId>process1</processDefId>
@@ -31,8 +40,27 @@
                </packageActivityForm>
             </entry>
          </packageActivityFormMap>
-         <packageActivityPluginMap/>
+         <packageActivityPluginMap>
+            <entry>
+               <string>process2::tool1</string>
+               <packageActivityPlugin>
+                  <processDefId>process2</processDefId>
+                  <activityDefId>tool1</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_cts_complaint_table\nSET c_customer_id = &apos;ID-884&apos;\nWHERE id = &apos;CMP-000007&apos;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+         </packageActivityPluginMap>
          <packageParticipantMap>
+            <entry>
+               <string>process1::process1_participant1</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>process1_participant1</participantId>
+                  <type>user</type>
+                  <value>admin</value>
+               </packageParticipant>
+            </entry>
             <entry>
                <string>process1::processStartWhiteList</string>
                <packageParticipant>
@@ -43,12 +71,12 @@
                </packageParticipant>
             </entry>
             <entry>
-               <string>process1::process1_participant1</string>
+               <string>process2::processStartWhiteList</string>
                <packageParticipant>
-                  <processDefId>process1</processDefId>
-                  <participantId>process1_participant1</participantId>
-                  <type>user</type>
-                  <value>admin</value>
+                  <processDefId>process2</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
