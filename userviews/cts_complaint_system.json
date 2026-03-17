@@ -67,31 +67,106 @@
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.apps.userview.lib.DataListMenu",
-                "properties": {
-                    "cacheAllLinks": "",
-                    "customHeader": "",
-                    "keyName": "",
-                    "customFooter": "",
-                    "label": "All Request List",
-                    "enableOffline": "",
-                    "customId": "",
-                    "buttonPosition": "bothLeft",
-                    "datalistId": "list_cts_complaint_review",
-                    "checkboxPosition": "left",
-                    "selectionType": "multiple",
-                    "userviewCacheDuration": "",
-                    "cacheListAction": "",
-                    "userviewCacheScope": "",
-                    "rowCount": "",
-                    "id": "DF2CA6CD56D34EBAB129CE2B6DEDB141",
-                    "iconIncluded": false
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "All Request List",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_cts_complaint_review",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "DF2CA6CD56D34EBAB129CE2B6DEDB141",
+                        "iconIncluded": false
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Pending Requests",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "cts_pending_request",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "97266704D1A74D7B74483BCC56C18426",
+                        "iconIncluded": false
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Resolved Requests",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "cts_resolved_request",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "DABC7CF942834721DF3A49F660A91869",
+                        "iconIncluded": false
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Rejected Requests",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "cts_rejected_request",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "C30E077D6A8244377E5A807EF2E053A8",
+                        "iconIncluded": false
+                    }
                 }
-            }],
+            ],
             "properties": {
-                "label": "New Category",
-                "id": "category-9A8F211A9CF541BA82612F8BE4BA631A"
+                "hide": "",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "Request Dashboard",
+                "id": "category-9A8F211A9CF541BA82612F8BE4BA631A",
+                "iconIncluded": false
             }
         }
     ],
