@@ -14,7 +14,7 @@
          <id>counter</id>
          <appId>complaint_system</appId>
          <appVersion>1</appVersion>
-         <value>1</value>
+         <value>8</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
    </environmentVariableList>

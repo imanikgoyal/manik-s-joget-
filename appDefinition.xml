@@ -34,21 +34,21 @@
          <packageActivityPluginMap/>
          <packageParticipantMap>
             <entry>
-               <string>process1::process1_participant1</string>
-               <packageParticipant>
-                  <processDefId>process1</processDefId>
-                  <participantId>process1_participant1</participantId>
-                  <type>user</type>
-                  <value>admin</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>process1::processStartWhiteList</string>
                <packageParticipant>
                   <processDefId>process1</processDefId>
                   <participantId>processStartWhiteList</participantId>
                   <type>role</type>
                   <value>adminUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process1::process1_participant1</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>process1_participant1</participantId>
+                  <type>user</type>
+                  <value>admin</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
