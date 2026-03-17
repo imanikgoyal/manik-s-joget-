@@ -1,0 +1,112 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "name": "id",
+            "id": "column_0",
+            "label": "Complaint ID"
+        },
+        {
+            "name": "fullname",
+            "id": "column_1",
+            "label": "Full Name"
+        },
+        {
+            "name": "phone",
+            "id": "column_2",
+            "label": "Phone Number"
+        },
+        {
+            "name": "email",
+            "id": "column_3",
+            "label": "Email Address"
+        },
+        {
+            "name": "customer_id",
+            "id": "column_4",
+            "label": "Customer ID"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "category",
+            "id": "column_6",
+            "label": "Complaint Category",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "priority",
+            "id": "column_7",
+            "label": "Priority",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "assigned_to",
+            "id": "column_5",
+            "label": "Assigned To (Agent)",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "status",
+            "id": "column_8",
+            "label": "Status",
+            "sortable": "false"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "description": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "Resolved Request List",
+    "id": "cts_resolved_request",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "joins": [],
+            "aggregateField": [],
+            "formDefId": "cts_complaint_review",
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [{
+                "field": "status",
+                "join": "AND",
+                "value": "rejected",
+                "operator": "="
+            }],
+            "groupBy": "",
+            "cacheRowCount": "",
+            "functionColumns": []
+        }
+    },
+    "actions": [{
+        "className": "org.joget.apps.datalist.lib.FormRowDeleteDataListAction",
+        "id": "action_0",
+        "properties": {
+            "deleteFiles": "",
+            "deleteGridData": "",
+            "formDefId": "cts_complaint_review",
+            "deleteSubformData": "",
+            "label": "Delete",
+            "confirmation": "",
+            "datalist_type": "action",
+            "iconIncluded": false,
+            "abortRelatedRunningProcesses": ""
+        }
+    }],
+    "order": ""
+}
