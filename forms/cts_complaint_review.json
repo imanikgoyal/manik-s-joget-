@@ -283,15 +283,27 @@
                         {
                             "className": "org.joget.apps.form.lib.DatePicker",
                             "properties": {
-                                "readonly": "true",
+                                "permissionHidden": "",
+                                "yearRange": "2020",
                                 "dataFormat": "yyyy-MM-dd",
+                                "startDateFieldId": "",
                                 "format": "dd-MM-yyyy",
                                 "validator": {
                                     "className": "",
                                     "properties": {}
                                 },
                                 "label": "Submission Date",
+                                "datePickerType": "",
+                                "currentDateAs": "",
+                                "endDateFieldId": "",
+                                "readonly": "true",
+                                "allowManual": "",
+                                "workflowVariable": "",
                                 "id": "submission_date",
+                                "placeholder": "",
+                                "iconIncluded": false,
+                                "value": "#date.dd-MM-yyyy#",
+                                "disableWeekends": "",
                                 "readonlyLabel": ""
                             }
                         },
