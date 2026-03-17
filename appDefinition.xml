@@ -3,7 +3,67 @@
    <id>complaint_system</id>
    <version></version>
    <name>Complaint Ticket System</name>
-   <packageDefinitionList/>
+   <packageDefinitionList>
+      <packageDefinition>
+         <id>complaint_system</id>
+         <name>Complaint Ticket System</name>
+         <packageActivityFormMap>
+            <entry>
+               <string>process1::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId>cts_compliant_form</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>process1::activity1</string>
+               <packageActivityForm>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>activity1</activityDefId>
+                  <formId>cts_complaint_review</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+         </packageActivityFormMap>
+         <packageActivityPluginMap>
+            <entry>
+               <string>process1::tool1</string>
+               <packageActivityPlugin>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>tool1</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.plugin.enterprise.FormDataUpdateTool&quot;,&quot;properties&quot;:{&quot;formDefId&quot;:&quot;cts_complaint_review&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;status&quot;,&quot;value&quot;:&quot;Approved&quot;}]}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+         </packageActivityPluginMap>
+         <packageParticipantMap>
+            <entry>
+               <string>process1::process1_participant1</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>process1_participant1</participantId>
+                  <type>user</type>
+                  <value>admin</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process1::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
+               </packageParticipant>
+            </entry>
+         </packageParticipantMap>
+      </packageDefinition>
+   </packageDefinitionList>
    <formDefinitionList/>
    <userviewDefinitionList/>
    <datalistDefinitionList/>
