@@ -445,7 +445,7 @@
                                 "workflowVariable": "status",
                                 "id": "status",
                                 "iconIncluded": false,
-                                "value": "",
+                                "value": "Pending",
                                 "readonlyLabel": ""
                             }
                         },
@@ -551,14 +551,8 @@
         },
         "id": "cts_compliant_form",
         "postProcessor": {
-            "className": "org.joget.plugin.enterprise.FormDataUpdateTool",
-            "properties": {
-                "formDefId": "cts_compliant_form",
-                "fields": [{
-                    "field": "status",
-                    "value": "Pending"
-                }]
-            }
+            "className": "",
+            "properties": {}
         },
         "storeBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
