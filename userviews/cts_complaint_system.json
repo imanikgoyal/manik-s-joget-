@@ -67,7 +67,28 @@
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [],
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.DataListMenu",
+                "properties": {
+                    "cacheAllLinks": "",
+                    "customHeader": "",
+                    "keyName": "",
+                    "customFooter": "",
+                    "label": "List",
+                    "enableOffline": "",
+                    "customId": "",
+                    "buttonPosition": "bothLeft",
+                    "datalistId": "list_cts_complaint_review",
+                    "checkboxPosition": "left",
+                    "selectionType": "multiple",
+                    "userviewCacheDuration": "",
+                    "cacheListAction": "",
+                    "userviewCacheScope": "",
+                    "rowCount": "",
+                    "id": "DF2CA6CD56D34EBAB129CE2B6DEDB141",
+                    "iconIncluded": false
+                }
+            }],
             "properties": {
                 "label": "New Category",
                 "id": "category-9A8F211A9CF541BA82612F8BE4BA631A"
