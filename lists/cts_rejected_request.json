@@ -85,7 +85,7 @@
             "filters": [{
                 "field": "status",
                 "join": "AND",
-                "value": "Pending",
+                "value": "rejected",
                 "operator": "="
             }],
             "groupBy": "",
