@@ -6,6 +6,7 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "requiredSanitize": "",
+                        "permissionHidden": "",
                         "maxlength": "",
                         "validator": {
                             "className": "",
@@ -14,7 +15,7 @@
                         "label": "Complaint ID",
                         "disableIncrementDecrementArrow": "",
                         "encryption": "",
-                        "readonly": "",
+                        "readonly": "true",
                         "size": "",
                         "workflowVariable": "",
                         "style": "",
