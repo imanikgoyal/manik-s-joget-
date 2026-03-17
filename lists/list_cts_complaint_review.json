@@ -77,6 +77,20 @@
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
         "properties": {"formDefId": "cts_complaint_review"}
     },
-    "actions": [],
+    "actions": [{
+        "className": "org.joget.apps.datalist.lib.FormRowDeleteDataListAction",
+        "id": "action_0",
+        "properties": {
+            "deleteFiles": "",
+            "deleteGridData": "",
+            "formDefId": "cts_complaint_review",
+            "deleteSubformData": "",
+            "label": "Delete",
+            "confirmation": "",
+            "datalist_type": "action",
+            "iconIncluded": false,
+            "abortRelatedRunningProcesses": ""
+        }
+    }],
     "order": ""
 }
