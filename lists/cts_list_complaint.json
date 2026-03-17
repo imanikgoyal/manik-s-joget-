@@ -1,18 +1,84 @@
 {
-    "rowActions": [],
-    "columns": [],
-    "name": "Custom SQL List Data",
-    "pageSize": "0",
-    "orderBy": "",
-    "description": "",
-    "id": "cts_list_complaint",
-    "filters": [],
-    "binder": {
-        "name": "",
+    "template": {
         "className": "",
         "properties": {}
     },
-    "actions": [],
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "id",
+            "id": "column_0",
+            "label": "id",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_fullname",
+            "id": "column_1",
+            "label": "c_fullname",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_phone",
+            "id": "column_2",
+            "label": "c_phone",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_email",
+            "id": "column_3",
+            "label": "c_email",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_customer_id",
+            "id": "column_4",
+            "label": "c_customer_id",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_priority",
+            "id": "column_5",
+            "label": "c_priority",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_status",
+            "id": "column_6",
+            "label": "c_status",
+            "sortable": "false"
+        }
+    ],
+    "pageSize": "0",
+    "orderBy": "",
+    "description": "",
+    "filters": [],
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "name": "Custom SQL List Data",
+    "id": "cts_list_complaint",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "optimisePaging": "",
+            "jdbcDatasource": "default",
+            "cacheRowCount": "",
+            "sql": "SELECT * FROM app_fd_cts_complaint_table",
+            "primaryKey": "username"
+        }
+    },
+    "actions": [],
     "order": ""
 }
