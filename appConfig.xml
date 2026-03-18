@@ -14,8 +14,55 @@
          <id>counter</id>
          <appId>complaint_system</appId>
          <appVersion>1</appVersion>
-         <value>8</value>
+         <value>10</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>requests</id>
+         <appId>complaint_system</appId>
+         <appVersion>1</appVersion>
+         <value>import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import javax.sql.DataSource;
+
+import org.joget.apps.app.service.AppUtil;
+
+// Get datasource
+DataSource ds = (DataSource) AppUtil.getApplicationContext().getBean(&quot;setupDataSource&quot;);
+
+Connection con = null;
+PreparedStatement stmt = null;
+ResultSet rs = null;
+
+int count = 0;
+
+try {
+    con = ds.getConnection();
+    
+    String sql = &quot;SELECT COUNT(*) AS total FROM app_fd_cts_complaint_table&quot;;
+    stmt = con.prepareStatement(sql);
+    
+    rs = stmt.executeQuery();
+    
+    if (rs.next()) {
+        count = rs.getInt(&quot;total&quot;);
+    }
+
+    // Log output (optional)
+    System.out.println(&quot;Total Rows: &quot; + count);
+
+} catch (Exception e) {
+    e.printStackTrace();
+} finally {
+    try { if (rs != null) rs.close(); } catch (Exception e) {}
+    try { if (stmt != null) stmt.close(); } catch (Exception e) {}
+    try { if (con != null) con.close(); } catch (Exception e) {}
+}
+
+// return count if needed
+return count;</value>
+         <remarks></remarks>
       </environmentVariable>
    </environmentVariableList>
    <messageList/>
